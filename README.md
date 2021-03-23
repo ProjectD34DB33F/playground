@@ -1,2 +1,2 @@
-# playground
-Playground to learn Unity.
+# Playground
+Playground to learn Unity. Test code. Improvise. Adapt. Overcome.
