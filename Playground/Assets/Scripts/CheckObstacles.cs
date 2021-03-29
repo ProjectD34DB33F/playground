@@ -62,7 +62,6 @@ public class CheckObstacles : MonoBehaviour
                 obstacle.TurnInvisible();
                 alreadyTransparent.Add(obstacle);
             }
-
         }
     }
 
