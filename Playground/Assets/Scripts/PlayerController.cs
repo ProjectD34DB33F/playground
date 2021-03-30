@@ -4,17 +4,14 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    [SerializeField]
-    CharacterController controller;
-    [SerializeField]
-    Joystick joystick;
-    [SerializeField]
-    float speed = 6f;
+    [SerializeField] CharacterController controller;
+    [SerializeField] Joystick joystick;
+    [SerializeField] float speed = 6f;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
