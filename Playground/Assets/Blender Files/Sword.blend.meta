@@ -1,9 +1,34 @@
 fileFormatVersion: 2
-guid: c09773b136b552e438bcd5594839302f
+guid: 341ee540c6e62304f8c5fe14b6baccac
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Grip Material
+    second: {fileID: 2100000, guid: fc23a0f85bed9c14da5e49a313851b49, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Handle Material
+    second: {fileID: 2100000, guid: 8907f9e9d90e990438d4d62386f9c3fe, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Pommel1 Material
+    second: {fileID: 2100000, guid: 42d1595035090ee41ba30b990f4a8671, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Pommel2 Material
+    second: {fileID: 2100000, guid: 6bfab7763208a694cac4db2f653d6517, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Sword Material
+    second: {fileID: 2100000, guid: cf1700676b9722742a502eab0fef21de, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -34,15 +59,15 @@ ModelImporter:
     isReadable: 0
   meshes:
     lODScreenPercentages: []
-    globalScale: 1
+    globalScale: 0.3
     meshCompression: 0
-    addColliders: 1
+    addColliders: 0
     useSRGBMaterialColor: 1
     sortHierarchyByName: 1
     importVisibility: 1
     importBlendShapes: 1
-    importCameras: 1
-    importLights: 1
+    importCameras: 0
+    importLights: 0
     fileIdsGeneration: 2
     swapUVChannels: 0
     generateSecondaryUV: 0
@@ -85,7 +110,7 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 1
+    globalScale: 0.3
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0

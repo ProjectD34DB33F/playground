@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class isObstacle : MonoBehaviour
+public class IsObstacle : MonoBehaviour
 {
     [SerializeField]
     Material invisibleMat;
