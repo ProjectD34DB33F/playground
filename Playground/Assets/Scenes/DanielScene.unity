@@ -691,7 +691,7 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 2005227724}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2005227730
+--- !u!114 &2005227726
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -983,6 +983,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bullet
+      objectReference: {fileID: 0}
+    - target: {fileID: 5518569517089432820, guid: 1daa5b30609c1584d9e2593e78899c01,
+        type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5518569517089432820, guid: 1daa5b30609c1584d9e2593e78899c01,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5518569517089432820, guid: 1daa5b30609c1584d9e2593e78899c01,
+        type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 6210712622610211966, guid: 1daa5b30609c1584d9e2593e78899c01,
         type: 3}

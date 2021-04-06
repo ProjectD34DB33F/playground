@@ -24,7 +24,7 @@ public class Projectile : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        GameObject effect = Instantiate(hitEffect, transform.position - new Vector3(1, 0, 1), Quaternion.identity);
+        GameObject effect = Instantiate(hitEffect, transform.position, Quaternion.identity);
         Destroy(effect, 1f);
         Destroy(gameObject);
     }

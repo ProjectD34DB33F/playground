@@ -8,14 +8,14 @@ public class CameraController : MonoBehaviour
     [SerializeField] Vector3 offset;
     [SerializeField] float pitch = 1f;
 
-    private List<IsObstacle> currentObstacles;
-    private List<IsObstacle> alreadyTransparent;
+    private List<isObstacle> currentObstacles;
+    private List<isObstacle> alreadyTransparent;
     new Transform camera;
 
     private void Awake()
     {
-        currentObstacles = new List<IsObstacle>();
-        alreadyTransparent = new List<IsObstacle>();
+        currentObstacles = new List<isObstacle>();
+        alreadyTransparent = new List<isObstacle>();
 
         camera = this.gameObject.transform;
     }
@@ -54,13 +54,13 @@ public class CameraController : MonoBehaviour
 
         foreach (var hit in hitsForward)
         {
-            if (hit.collider.gameObject.TryGetComponent(out IsObstacle obstacle))
+            if (hit.collider.gameObject.TryGetComponent(out isObstacle obstacle))
                 if (!currentObstacles.Contains(obstacle))
                     currentObstacles.Add(obstacle);
         }
         foreach (var hit in hitsBackward)
         {
-            if (hit.collider.gameObject.TryGetComponent(out IsObstacle obstacle))
+            if (hit.collider.gameObject.TryGetComponent(out isObstacle obstacle))
                 if (!currentObstacles.Contains(obstacle))
                     currentObstacles.Add(obstacle);
         }
@@ -70,7 +70,7 @@ public class CameraController : MonoBehaviour
     {
         for (int i = 0; i < currentObstacles.Count; i++)
         {
-            IsObstacle obstacle = currentObstacles[i];
+            isObstacle obstacle = currentObstacles[i];
 
             if (!alreadyTransparent.Contains(obstacle))
             {
@@ -84,7 +84,7 @@ public class CameraController : MonoBehaviour
     {
         for (int i = 0; i < alreadyTransparent.Count; i++)
         {
-            IsObstacle notObstacle = alreadyTransparent[i];
+            isObstacle notObstacle = alreadyTransparent[i];
 
             if (!currentObstacles.Contains(notObstacle))
             {
