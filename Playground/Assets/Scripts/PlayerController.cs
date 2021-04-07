@@ -8,10 +8,13 @@ public class PlayerController : MonoBehaviour
     [SerializeField] Joystick joystickMove;
     [SerializeField] Joystick joystickAttack;
     [SerializeField] Transform firePoint;
+
     [SerializeField] Transform groundCheck;
     [SerializeField] LayerMask groundMask;
+
     [SerializeField] GameObject bulletPrefab;
     [SerializeField] float speed = 10f;
+
     float gravity = -9.81f;
     float groundDistance = 0.4f;
     Vector3 velocity;
@@ -53,6 +56,7 @@ public class PlayerController : MonoBehaviour
             Quaternion lookRotation = Quaternion.LookRotation(new Vector3(joystickMove.Horizontal, 0, joystickMove.Vertical));
             transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, Time.deltaTime * 5f);
             controller.Move(direction * speed * Time.deltaTime);
+
             velocity.y += gravity * speed * Time.deltaTime;
             controller.Move(velocity * Time.deltaTime);
         }
